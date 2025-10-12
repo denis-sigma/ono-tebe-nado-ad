@@ -1,0 +1,116 @@
+.header {
+
+}
+
+.menu {
+
+}
+
+.logo {
+
+}
+
+.contacts {
+
+}
+
+.cover {
+
+}
+
+.title {
+  
+}
+
+.description {
+ 
+}
+
+.subline {
+  
+}
+
+.button {
+ 
+}
+
+.lots {
+  
+}
+
+.frame-1 {
+
+}
+
+.lot-1 {
+
+}
+
+.frame-2 {
+  
+}
+
+.lot-2 {
+
+}
+
+.frame-3 {
+  
+}
+
+.lot-3 {
+
+}
+
+.about {
+  
+}
+
+.logo-column {
+  
+}
+
+.about-column {
+  
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* три равные колонки */
+  align-items: start;                    /* элементы выравниваются сверху */
+  gap: 20px;
+  padding: 40px 80px;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+}
+
+.contacts p {
+  margin: 4px 0;
+}
+
+.menu {
+  text-align: center;
+  font-weight: 400px  ;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: underline;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.socials img {
+  width: 48px;
+  height: 48px;
+}
+
+.socials img:hover {
+  border-color: #000;
+}
