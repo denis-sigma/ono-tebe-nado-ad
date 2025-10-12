@@ -12,6 +12,7 @@
 
 .menu {
   grid-template-columns: 1fr 1fr 1fr;
+  list-style: circle;
 }
 
 .logo {
@@ -22,6 +23,8 @@
   grid-template-columns: 1fr;
   justify-items: center;
   gap: auto;
+  justify-self: end;
+  max-width: 400px; /* укажите значение максимальной ширины */
 }
 
 .cover {
