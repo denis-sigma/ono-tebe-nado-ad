@@ -10,6 +10,8 @@
   display: flex;
   gap: 32px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header__links-list-item {
@@ -50,7 +52,6 @@
 
 .header__address {
   justify-self: end;
-  text-align: right;
 }
 
 .address a {
@@ -69,10 +70,7 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -90,10 +88,11 @@
 
 .aligned-text {
   display: block;
+  line-height: 1.15;
 }
 
-.aligned-text:first-child {
-  margin-top: 0;
+.aligned-text:not(:first-child) {
+  margin-top: 20px;
 }
 
 .aligned-text_center {
@@ -156,7 +155,8 @@
   display: flex;
   gap: 25px;
   list-style: none;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
+  padding: 0;
 }
 
 .lots__cards-list-item {
@@ -246,7 +246,7 @@
 }
 
 .about__title {
-  margin: 100px 0;
+  margin: 100px 0 100px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -276,6 +276,8 @@
   font-size: 18px;
   text-align: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__menu-link {
@@ -292,6 +294,8 @@
   justify-self: end;
   gap: 48px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__social-icon {
