@@ -176,7 +176,7 @@
 
 .lots__cards-list {
   display: flex;
-  flex-wrap: inherit;
+  flex-wrap: wrap;
   gap: 25px;
   list-style: none;
 }
