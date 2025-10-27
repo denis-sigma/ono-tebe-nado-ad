@@ -244,7 +244,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  padding: 0 50px 90px;
+  padding: 0 50px 183px;
 }
 
 .footer__menu-link_active {
