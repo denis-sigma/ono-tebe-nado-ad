@@ -24,13 +24,11 @@
 .link_list {
   font-size: 18px;
   font-weight: 400;
-  text-underline-offset: 4px; 
-  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .main_link_marker {
-  list-style-type: none; 
-  text-decoration: none;
+  list-style-type: none;
 }
 
 .link_main {
@@ -49,9 +47,20 @@
   letter-spacing: 0.18px;
   font-family: "Raleway", sans-serif;
   list-style-type: none;
-  font-style: normal;  
 }
 
+.address_numbers {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.street_address {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
 
 .cover {
   position: relative;
@@ -61,7 +70,7 @@
   text-transform: uppercase;
   z-index: 0;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
 }
 
 .overlay {
@@ -76,45 +85,46 @@
   z-index: -1;
 }
 
-.cover_title { 
-  position: relative;
+.cover_title {
   display: flex;
   flex-direction: column;
   padding: 165px 50px 147px;
-  gap: 20px;   
-} 
- 
-.cover_title span { 
-  font-size: 100px; 
-  font-weight: 700;  
-  line-height: 100%;  
+  gap: 20px;
+}
+
+.cover_title span {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 30px;
 }
 
 .text_cover {
-  display: block;
-  line-height: 125px;
+  position: relative;
+  align-self: flex-start;
+  line-height: 115%;
+  transform: translateY(2px);
 }
 
 .text_center {
-  text-align: center;
-  line-height: 125px;
+  align-self: center;
+  position: relative;
+  top: 15px;
 }
 
 .text_right {
-  text-align: right;
-  line-height: 120px;  
+  align-self: flex-end;
+  position: relative;
+  top: 15px;
+  left: 30px;
 }
 
-.text_cover { 
-  letter-spacing: 30px; /* буква о разрыв 30, буквы те разрыв 30, буквы ад разрыв 30 */
+.text_cover .spacing {
+  letter-spacing: 60px;
 }
 
-.text_cover .no_letter_spacing {
-  letter-spacing: 0px; /* сброс межбуквенного разрыва */ 
-}
-
-.text_cover .letter_spacing {
-  letter-spacing: 60px; /* буквы но разрыв 60, буквы бе разрыв 60, буква н разрыв 60 */ 
+.text_cover .no_spacing {
+  letter-spacing: 60px;
 }
 
 .cover_description {
@@ -160,14 +170,7 @@
   flex-wrap: wrap;
   list-style-type: none;
   gap: 25px;
-  justify-content: flex-start; /* указал start */ 
-  padding: 0; 
-  margin: 0 auto;
-  margin-left: 20px; /* левый отступ чтобы совпадало с макетом */  
-}
-
-.card_lots a { 
-  text-decoration: none; /* дефолтное подчеркивание текста убрано */ 
+  justify-content: center;
 }
 
 .card_lots {
@@ -181,7 +184,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: -2;
   padding: 51px 40px 48px;
   justify-content: space-between;
   background-size: cover;
@@ -189,15 +192,15 @@
   background-position: center;
 }
 
-.card_about_cinema {
+.card_1 {
   background-image: url(./../images/card-lot-01.jpg);
 }
 
-.card_about_book {
+.card_2 {
   background-image: url(./../images/card-lot-02.jpg);
 }
 
-.card_about_picture {
+.card_3 {
   background-image: url(./../images/card-lot-03.jpg);
 }
 
@@ -210,15 +213,12 @@
   text-transform: uppercase;
 }
 
-.link_lots { 
-  text-decoration: none;
-}
 .text_on_card {
   color: white;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; 
+  line-height: 120%;
 }
 
 .view_more {
@@ -282,11 +282,11 @@
   line-height: 24px;
 }
 
-.text_up {
+.text_1_about {
   padding-top: 76px;
 }
 
-.text_down {
+.text_2_about {
   padding-top: 25px;
 }
 
@@ -299,8 +299,7 @@
 }
 
 .footer_address {
-  font-style: normal;
-  padding-left: 0px; 
+  padding-left: 0px;
 }
 
 .footer_menu {
