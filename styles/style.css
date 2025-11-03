@@ -1,76 +1,175 @@
-.story-text {
-  color: white;
-  font-size: 20px;
-  line-height: 120%;
+.magic-header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 24px;
 }
 
-.about-title {
-  color: black;
-  font-size: 40px;
-  font-weight: 700;
+.nav-bar {
+  display: flex;
+  justify-self: center;
 }
 
-.more-dreams {
-  display: block;
-  padding-top: 30px;
-  margin-left: 64px;
-  color: black;
-  font-size: 20px;
-  text-underline-offset: 3px;
+.dream-links {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+  padding-right: 7px;
 }
 
-.symbol-mark {
+.dream-item {
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-offset: 4px;
+}
+
+.moon-marker {
+  list-style-type: none;
+}
+
+.link-path {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.main-path {
+  text-decoration: none;
+}
+
+.brand-symbol {
   width: 148px;
-  height: 114px;
+  height: 105px;
 }
 
-.hero-vision {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-evenly;
-  padding: 0 50px 55px 78px;
-  gap: 79px;
+.contact-soul {
+  padding-left: 185px;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
+  font-family: "Raleway", sans-serif;
+  list-style-type: none;
 }
 
-.veil-shadow {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.contact-call {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-.about-essence {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding-top: 100px;
-}
-
-.vision-text {
-  font-size: 22px;
-  line-height: 28px;
-  word-spacing: 18px;
-}
-
-.footer-path {
-  padding-left: 35px;
+.place-echo {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
 }
 
 .dream-hero {
   position: relative;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: center;
   color: white;
   text-transform: uppercase;
+  z-index: 0;
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.veil-shadow {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-chant {
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px 147px;
+  gap: 20px;
+}
+
+.hero-word {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 30px;
+  align-self: flex-start;
+  transform: translateY(2px);
+}
+
+.word-center {
+  align-self: center;
+  top: 15px;
+  position: relative;
+}
+
+.word-right {
+  align-self: flex-end;
+  position: relative;
+  top: 15px;
+  left: 30px;
+}
+
+.hero-space, .letter-no-space {
+  letter-spacing: 60px;
+}
+
+.hero-vision {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 0px 50px 55px 78px;
+  gap: 79px;
+}
+
+.vision-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 18px;
+}
+
+.wish-button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid white;
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 51px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.gallery-section {
+  padding-top: 179px;
+}
+
+.gallery-title {
+  padding-left: 64px;
+  padding-bottom: 26px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.lot-field {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
 .story-card {
+  max-width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
   position: relative;
-  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 51px 40px 48px;
@@ -80,22 +179,45 @@
   background-position: center;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
-  padding: 92px 24px;
+.dream-one { background-image: url(./../images/card-lot-01.jpg); }
+.dream-two { background-image: url(./../images/card-lot-02.jpg); }
+.dream-three { background-image: url(./../images/card-lot-03.jpg); }
+
+.story-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
 }
 
-.about-texts {
+.story-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.more-dreams {
+  display: block;
+  text-underline-offset: 3px;
+  padding-top: 30px;
   color: black;
   font-size: 20px;
-  line-height: 24px;
-  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-left: 64px;
 }
 
 .story-about {
   margin-top: 148px;
+}
+
+.about-realm {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+  padding: 34px 24px 0px;
 }
 
 .about-symbol {
@@ -109,170 +231,66 @@
   align-items: center;
 }
 
-.dream-links {
-  display: flex;
-  gap: 32px;
-  list-style-type: circle;
-  padding-right: 7px;
+.symbol-mark {
+  width: 148px;
+  height: 114px;
 }
 
-.hero-word {
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: 30px;
-  line-height: 100%;
-  align-self: flex-start;
-}
-
-.word-center {
-  align-self: center;
-  top: 15px;
-  position: relative;
-}
-
-.about-realm {
-  display: grid;
-  grid-template-columns: 334px 1fr;
-  gap: 25px;
-  padding: 34px 24px 0;
-}
-
-.hero-chant {
+.about-essence {
   display: flex;
   flex-direction: column;
-  padding: 165px 50px 147px;
-  gap: 20px;
+  gap: 24px;
+  padding-top: 100px;
 }
 
-.brand-symbol {
-  width: 148px;
-  height: 105px;
-}
-
-.vision-text {
-  font-size: 22px;
-  line-height: 28px;
-  word-spacing: 18px;
-}
-
-.wish-button {
-  width: 256px;
-  height: 51px;
-  border: 1px solid white;
-  background: transparent;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.lot-field {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-}
-
-.dream-one {
-  background-image: url(./../images/card-lot-01.jpg);
-}
-
-.dream-two {
-  background-image: url(./../images/card-lot-02.jpg);
-}
-
-.dream-three {
-  background-image: url(./../images/card-lot-03.jpg);
-}
-
-.hero-word .soul-space {
-  letter-spacing: 60px;
-}
-
-.word-right {
-  align-self: flex-end;
-  position: relative;
-  top: 15px;
-  left: 30px;
-}
-
-.footer-soul {
-  padding-left: 0;
-}
-
-.contact-call {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.contact-soul {
-  padding-left: 185px;
-  font-size: 18px;
-  line-height: 24.3px;
-  font-family: "Raleway", sans-serif;
-  list-style-type: none;
-}
-
-.story-title {
-  color: white;
-  font-size: 22px;
+.about-title {
+  color: black;
+  font-size: 40px;
   font-weight: 700;
-  text-decoration: underline;
-  text-transform: uppercase;
 }
+
+.about-texts {
+  align-self: flex-start;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-paragraph:first-child { padding-top: 76px; }
+.about-paragraph:last-child { padding-top: 25px; }
+
+.site-footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 180px 50px 88px;
+  gap: 140px;
+  align-items: flex-start;
+}
+
+.footer-soul { padding-left: 0px; }
+
+.footer-nav { padding-left: 35px; }
+
+.footer-nav-list { list-style-type: none; text-underline-offset: 3px; }
 
 .link-spirit {
   color: black;
   text-align: center;
   font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.main-path {
-  text-decoration: none;
-}
-
-.icon-mark {
-  width: 48px;
-  height: 48px;
-}
+.footer-link--main { text-decoration: none; }
 
 .footer-icons {
   display: flex;
   gap: 48px;
 }
 
-.letter-no-space {
-  letter-spacing: 60px;
-}
-
-.gallery-title {
-  padding: 0 0 26px 64px;
-  color: #000;
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.lot-card {
-  max-width: 334px;
-  min-height: 563px;
-  flex-grow: 1;
-}
-
-.dream-item {
-  font-size: 18px;
-  font-weight: 400;
-  text-underline-offset: 4px;
-}
-
-.moon-marker {
-  list-style-type: none;
-}
-
-.place-echo {
-  font-size: 18px;
-  line-height: 24.3px;
-  font-style: normal;
-  font-family: "Raleway", sans-serif;
+.icon-mark {
+  width: 48px;
+  height: 48px;
 }
