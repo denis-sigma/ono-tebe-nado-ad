@@ -273,6 +273,18 @@
   padding-right: 24px;
 }
 
+.hdr_nav {
+  display: flex;
+  justify-self: center;
+}
+
+.nav_list {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+  padding-right: 7px;
+}
+
 .nav_item {
   font-size: 18px;
   font-weight: 400;
@@ -302,7 +314,8 @@
 }
 
 .addr_phone {
-
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .addr_street {
